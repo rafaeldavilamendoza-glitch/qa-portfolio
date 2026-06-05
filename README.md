@@ -14,7 +14,7 @@ Email: rafaeldavilamendoza@gmail.com
 
 GitHub: https://github.com/rafaeldavilamendoza-glitch
 
-LinkedIn: [Pega aquí tu enlace de LinkedIn]
+LinkedIn: https://www.linkedin.com/in/rafael-d%C3%A1vila-mendoza-2196093b8/
 
 ## Proyectos
 
