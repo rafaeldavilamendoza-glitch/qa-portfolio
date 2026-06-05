@@ -3,36 +3,46 @@
 Junior QA Engineer
 
 ## Sobre mí
+
 QA Engineer en formación con experiencia en Manual Testing, API Testing, diseño de casos de prueba, documentación de bugs y validación de aplicaciones web y móviles.
+
+Actualmente continúo fortaleciendo mis conocimientos en Selenium, Python y automatización de pruebas.
+
+## Contacto
+
+Email: rafaeldavilamendoza@gmail.com
+
+GitHub: https://github.com/rafaeldavilamendoza-glitch
+
+LinkedIn: [Pega aquí tu enlace de LinkedIn]
 
 ## Proyectos
 
 ### Urban Routes
-- Diseño y ejecución de casos de prueba funcionales.
+
+**Contexto:**
+Pruebas funcionales realizadas sobre una aplicación web de transporte.
+
+**Actividades realizadas:**
+- Diseño de casos de prueba.
+- Ejecución de pruebas funcionales.
+- Pruebas de regresión.
 - Reporte de bugs en Jira.
-- Functional Testing y Regression Testing.
+
+**Conclusiones:**
+Se identificaron incidencias funcionales y problemas de interfaz que afectaban la experiencia del usuario.
 
 ### Urban Grocers
-- API Testing con Postman.
+
+**Contexto:**
+Pruebas API realizadas utilizando Postman.
+
+**Actividades realizadas:**
+- Validación de endpoints.
+- Verificación de códigos de estado.
 - Validación de respuestas JSON.
-- Boundary Value Analysis y Equivalence Partitioning.
+- Aplicación de Boundary Value Analysis.
+- Aplicación de Equivalence Partitioning.
 
-### Mobile Testing
-- Pruebas manuales en aplicaciones móviles.
-- Detección y documentación de incidencias.
-- Evaluación de usabilidad y funcionalidad.
-
-## Habilidades
-- Manual Testing
-- API Testing
-- Jira
-- Postman
-- GitHub
-- Selenium Fundamentals
-- Agile
-- Scrum
-
-## Contacto
-Email: rafaeldavilamendoza@gmail.com
-LinkedIn: [Tu enlace de LinkedIn]
-GitHub: [Tu enlace de GitHub]
+**Conclusiones:**
+Se detectaron inconsistencias en la lógica de negocio y se validó el comportamiento correcto de múltiples endpoints.
