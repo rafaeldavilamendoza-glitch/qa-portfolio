@@ -1,0 +1,280 @@
+{
+  "info": {
+    "_postman_id": "84592491-1aff-43d8-8b4c-f90805fcf276",
+    "name": "Tareas TripleTen",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54062202",
+    "_collection_link": "https://go.postman.co/collection/54062202-84592491-1aff-43d8-8b4c-f90805fcf276?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Obtener Kits",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}api/v1/kits?cardID=1",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "kits"
+          ],
+          "query": [
+            {
+              "key": "cardID",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener kits search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}api/v1/kits/search?name=Sabores de París",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "kits",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Sabores de París"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear kit",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer d44e0c4d-559d-4948-9635-3f71af02537b",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n   \"cardId\": 1,\r\n   \"name\": \"Kit de prueba\"\r\n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/kits",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "kits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Modificar un kit",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"name\": \"kit modificado\",\r\n     \"productsList\": [\r\n         {\r\n             \"id\": 1,\r\n             \"quantity\": 4\r\n         },\r\n         {\r\n             \"id\": 5,\r\n             \"quantity\": 2\r\n         }\r\n     ]\r\n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/kits/7",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Borrar un kit",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/kits/7",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear nuevo usuario",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"firstName\": \"Carla\",\r\n \"phone\": \"+10005553535\",\r\n \"address\": \"Calle Central 123\"\r\n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/users",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar productos a un kit",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"productsList\": [\r\n         {\r\n             \"id\": 1,\r\n             \"quantity\": 2\r\n         },\r\n         {\r\n             \"id\": 6,\r\n             \"quantity\": 2\r\n         }\r\n     ]\r\n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/kits/8/products",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "8",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Busqueda de kits por productos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [\r\n        1,\r\n        2,\r\n        3\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/products/kits",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "products",
+            "kits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Everything You Need:DeliveryTime",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"deliveryTime\": 7,\r\n    \"products\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}everything-you-need/v1/calculate",
+          "host": [
+            "{{base_url}}everything-you-need"
+          ],
+          "path": [
+            "v1",
+            "calculate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener Logs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}api/logs/secondary",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "logs",
+            "secondary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Order and go",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
